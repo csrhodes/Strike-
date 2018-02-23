@@ -39,6 +39,10 @@ Check enjoying (this is the don't enjoy unenjoyable things rule):
 Report enjoying the leaflets when the player is a manager for the first time:
 	say "You enjoy reading the cartoonish leaflet, with its bright colours, simplistic assumptions, and naïve grasp of financial matters.".
 
+Report enjoying the leaflets when the player is a manager for the second time:
+	say "On closer inspection, you discover something you didn't know: that the financial projections you have been working with are based on unrealistic assumptions.  As you contemplate this, you find yourself more in sympathy with the strikers, and you begin a conversation with a picketer, which leads inexorably to...";
+	end the story saying "you have joined the picket line".
+
 [ this will dispense a liquid that is almost, but not completely, unlike tea. ]
 The tea urn is on the picket table.  The description is "A large, metallic urn, with a levered dispensing attachment – you judge this will comfortably supply the picket with hot liquid throughout their stint.".
 
