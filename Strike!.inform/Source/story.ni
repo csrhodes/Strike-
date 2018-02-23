@@ -28,11 +28,19 @@ The picket table is a supporter in the Car Park Entrance.  The description is "T
 
 The College Green is south of the Car Park Entrance.
 
+Enjoying is an action applying to one thing.  Understand "enjoy [thing]" as enjoying.  A thing can be enjoyable.  A thing is usually not enjoyable.
+
 [ enjoying these will be a thing ]
-The leaflets are on the picket table.  They are plural-named.
+The leaflets are on the picket table.  They are plural-named.  They are enjoyable.
+
+Check enjoying (this is the don't enjoy unenjoyable things rule):
+	if the noun is not enjoyable, say "There is little to enjoy in [the noun]." instead.
+
+Report enjoying the leaflets when the player is a manager for the first time:
+	say "You enjoy reading the cartoonish leaflet, with its bright colours, simplistic assumptions, and naïve grasp of financial matters.".
 
 [ this will dispense a liquid that is almost, but not completely, unlike tea. ]
-The tea urn is on the picket table.
+The tea urn is on the picket table.  The description is "A large, metallic urn, with a levered dispensing attachment – you judge this will comfortably supply the picket with hot liquid throughout their stint.".
 
 [ from Extra Supplies example ]
 There is a paper cup.  It is a container. The paper cup can be full or empty.  It is empty.  The description is "[if the paper cup is empty]The cup is made of relatively strong cardboard, and unlike many ubiquitously seen on every high street, it does not appear to have a plastic lining[else]The cup is made of strong cardboard, which doesn't quite insulate your hands against the hot brown liquid contained within it; you hope that it is tea, but you are prepared to be disappointed[end if]."
