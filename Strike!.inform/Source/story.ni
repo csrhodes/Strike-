@@ -35,7 +35,7 @@ The leaflets are on the picket table.  They are plural-named.
 The tea urn is on the picket table.
 
 [ from Extra Supplies example ]
-There is a paper cup.  It is a container. The paper cup can be full or empty.  It is empty.  The description is "The cup is made of relatively strong cardboard, and unlike many ubiquitously seen on every high street, it does not appear to have a plastic lining."
+There is a paper cup.  It is a container. The paper cup can be full or empty.  It is empty.  The description is "[if the paper cup is empty]The cup is made of relatively strong cardboard, and unlike many ubiquitously seen on every high street, it does not appear to have a plastic lining[else]The cup is made of strong cardboard, which doesn't quite insulate your hands against the hot brown liquid contained within it; you hope that it is tea, but you are prepared to be disappointed[end if]."
 
 The paper cups are on the picket table.  They are plural-named.  Understand "cup" or "paper cup" as the paper cups when the paper cup is not visible.  Understand "another" as a mistake. [Understand "another cup" as the paper cups.]
 
@@ -45,6 +45,28 @@ Instead of taking the paper cups:
 		say "You take [a paper cup].";
 	else:
 		say "You don't feel it is right to deprive the picket of [a paper cup] while you already have [if the player does not carry the paper cup]access to [end if]one."
+
+Does the player mean drinking the paper cup: it is likely.
+
+Understand "tea" as the paper cup when the paper cup is full.
+
+[ The block drinking rule blocks drinking, and I don't know how to override it with a more specialized check rule.
+  Making the block drinking rule do nothing is a large hammer, because now we can (sort-of) drink everything instead of nothing... ]
+The block drinking rule does nothing.
+
+Check drinking the paper cup:
+	if the noun is full, continue the action;
+	say "Your cup does not contain liquid; slurp as you might, there's no satisfaction to be gained that way." instead.
+
+Carry out drinking the paper cup:
+	now the noun is empty.
+
+Report drinking the paper cup for the first time (this is the first time drinking tea rule):
+	say "You were right!  The brown liquid is almost completely unlike tea.";
+	rule succeeds.
+
+Report drinking the paper cup (this is the drinking tea rule):
+	say "The flavour of the teaish liquid has not particularly improved since the last time."
 
 Filling it with is an action applying to two visible things.  Understand "fill [container] with [thing]" as filling it with. 
 
