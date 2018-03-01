@@ -30,7 +30,6 @@ The College Green is south of the Car Park Entrance.
 
 Enjoying is an action applying to one thing.  Understand "enjoy [thing]" as enjoying.  A thing can be enjoyable.  A thing is usually not enjoyable.
 
-[ enjoying these will be a thing ]
 The leaflets are on the picket table.  They are plural-named.  They are enjoyable.
 
 Check enjoying (this is the don't enjoy unenjoyable things rule):
@@ -48,6 +47,15 @@ The tea urn is on the picket table.  The description is "A large, metallic urn, 
 
 [ from Extra Supplies example ]
 There is a paper cup.  It is a container. The paper cup can be full or empty.  It is empty.  The description is "[if the paper cup is empty]The cup is made of relatively strong cardboard, and unlike many ubiquitously seen on every high street, it does not appear to have a plastic lining[else]The cup is made of strong cardboard, which doesn't quite insulate your hands against the hot brown liquid contained within it; you hope that it is tea, but you are prepared to be disappointed[end if]."
+
+The paper cup is enjoyable.
+
+Report enjoying the paper cup when the paper cup is empty:
+	say "You deeply appreciate the elegant cardboard, the lack of unbiodegradable lining, the sheer practical utility of the cup."
+
+Report enjoying the paper cup when the paper cup is full:
+	say "You unclench your jaw, loosen your tongue, and darned well enjoy the teaish drink.  It's actually not all that bad.";
+	silently try drinking the paper cup.
 
 The paper cups are on the picket table.  They are plural-named.  Understand "cup" or "paper cup" as the paper cups when the paper cup is not visible.  Understand "another" as a mistake. [Understand "another cup" as the paper cups.]
 
